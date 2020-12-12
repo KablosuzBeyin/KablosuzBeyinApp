@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669302203978",
+    "project_id": "kablosuzbeyin-13af4",
+    "storage_bucket": "kablosuzbeyin-13af4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669302203978:android:a0ed55fcc15fab84c0a8b3",
+        "android_client_info": {
+          "package_name": "com.kablosuz.beyin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669302203978-h63hjfp08l1u41pll1r2s8m0anpp9tek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Sm3PB3A1vuTPaPI9dsXbN_9Q26L458Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669302203978-h63hjfp08l1u41pll1r2s8m0anpp9tek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
