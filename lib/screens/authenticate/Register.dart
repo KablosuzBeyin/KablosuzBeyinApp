@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kablosuzbeyin/authentication/AuthService.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   final Function toggleView;
-  SignIn({this.toggleView});
+  Register({this.toggleView});
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
 
@@ -22,11 +22,11 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         elevation: 3.0,
-        title: Text("Giriş Yap"),
+        title: Text("Kaydol"),
         actions: <Widget>[
           FlatButton.icon(
             icon: Icon(Icons.person),
-            label: Text('Kaydol'),
+            label: Text('Giriş Yap'),
             onPressed: () => widget.toggleView(),
           ),
         ],
@@ -59,14 +59,14 @@ class _SignInState extends State<SignIn> {
               RaisedButton(
                 color: Theme.of(context).primaryColor,
                 child: Text(
-                  'Giriş Yap',
+                  'Kaydol',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {
                   if (_formKey.currentState.validate()) {
-                    dynamic result = _auth.signIn(email, password);
+                    dynamic result = _auth.register(email, password);
                     if (result == null) {
-                      setState(() => error = "Yanlış kullanıcı adı/şifre");
+                      setState(() => error = "Doğru bir e posta verin");
                     }
                   }
                 },
