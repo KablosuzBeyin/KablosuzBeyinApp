@@ -24,7 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
-
+  titled_navigation_bar: ^4.1.0
+  modal_bottom_sheet: ^1.0.0+1  
+  smooth_page_indicator: ^0.2.0
   #Firebase
   firebase_core: ^0.5.3
   firebase_analytics: ^6.3.0

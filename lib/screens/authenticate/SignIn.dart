@@ -92,14 +92,21 @@ class _SignInState extends State<SignIn> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Register()),
+                      MaterialPageRoute(
+                        builder: (context) => Register(),
+                        settings: RouteSettings(
+                          name: "Register",
+                        ),
+                      ),
                     );
                   },
                   child: Container(
                     child: Text(
                       "Üye Ol",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ),
