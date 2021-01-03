@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kablosuzbeyin/models/Recommendations.dart';
+import 'package:kablosuzbeyin/screens/home/EventDetails.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Events extends StatelessWidget {
@@ -41,7 +42,12 @@ class Events extends StatelessWidget {
                   children: List.generate(
                     recommendations.length,
                     (index) => GestureDetector(
-                      onTap: () {},
+                      onTap: () {Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              EventDetails(recommendations[index]),
+                        ),
+                      );},
                       child: Container(
                         margin: EdgeInsets.only(right: 10),
                         width: 40,
